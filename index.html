@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+	<style>
+body, html {
+  background-color: #1b2431;
+  font-size: 10px;
+  font-family: sans-serif;
+  height: 90%;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ b {
+     color: #ced4da;
+ }
+ h2 {
+     color: #ced4da;
+ }
+
+	</style>
+    </head>  
+  <body>
+    <form action="/" method='post' id="form_MESSAGE">         
+      <h2 class="display-5">kahoot pwner</h2>
+        
+        <b style="display: block;" >id : </b> <br/>
+        <input type='text' placeholder="Message" id="idroom" name='idroom'/><br/><br/><br/>
+        <b style="display: block;" >number of bots : </b> <br/>
+        <input type='number' placeholder="Message" id="numberofbots" name='numberofbots'/><br/><br/><br/>
+        <b style="display: block;" >random names : </b> <br/>
+        <input type='checkbox' placeholder="Message" id="randomname" name='randomname' onchange="checkboxchnaged()"/><br/><br/><br/>
+        <b style="display: block;" id="namestext">name : </b> <br/>
+        <input type='text' placeholder="Message" style="display: block;" id="names" name='names'/><br/><br/><br/>
+       
+    </form> 
+        <br/>
+      <button type="submit" class="btn" id="form_BUTTON" style="color: #363636 !important;border-color: #ced4da !important;" onclick="send();">validate</button>
+<script type="text/javascript">
+  function checkboxchnaged() {
+    var randomname = document.getElementById('randomname')
+    if(!randomname.checked) {
+        document.getElementById("names").style.display = "block"
+        document.getElementById("namestext").style.display = "block"
+    }else {
+        document.getElementById("names").style.display = "none"
+        document.getElementById("namestext").style.display = "none"
+
+    }
+
+  }
+  function send() {
+
+  document.getElementById('form_MESSAGE').submit() 
+  
+}
+</script>
+</html>

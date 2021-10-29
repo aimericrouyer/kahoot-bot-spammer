@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chance": "^1.1.8",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "got": "^11.8.2",
+    "kahoot.js-updated": "^3.404.1",
+    "path": "^0.12.7",
+    "user-agents": "^1.0.807",
+    "workerpool": "^6.1.5",
+    "ws": "^8.2.3"
+  }
+}
